@@ -1,0 +1,126 @@
+/* ### 版面設計 ###*/
+body         {margin: 24px 10px;
+             font-family: 'font-family: Arial, "新細明體", sans-serif';}
+
+#container   {width: 960px;
+              margin: auto;} 
+
+#header      {margin: 0 0 50px;}
+
+#content     {width: 600px;
+             float: left;
+             margin: 0 0 50px;}
+
+#sidebar    {width: 300px;
+             float: right;
+             margin: 0 0 50px;}
+
+#footer      {clear: both;}
+
+/* ### HEADER 圖文 ###*/
+#site        {float: left;}
+
+#site h1     {margin: 0;
+              line-height: 1;}
+
+#iconmenu    {float: right;
+              text-align: right;}
+
+#iconmenu ul {margin: 0;
+              padding-top: 3px 00;}
+
+#iconmenu li {display: inline;
+              list-style-type: none;}
+
+#iconmenu img {border:none;}
+
+#headering img{vertical-align: bottom;}
+
+#nav          {font-family: 'Maven Pro', Helvetica, Arial, san-serif;
+               font-size: 14px;
+               overflow: hidden;
+               border-top: solid 1px #ffffff;
+               background-color: #000000;} 
+
+#nav ul       {margin: 0;
+               padding: 0;}
+
+#nav li       {list-style-type: none;
+               float: left; }
+
+#nav li a     {display: block;
+               width: 120px;
+               padding: 5px 0;
+               border-right: solid 1px #ffffff;
+               color: #ffffff;
+               text-align: center;
+               text-decoration: none;}
+
+#nav li a:hover {background-color: #0097d8;}
+
+/* ### CONTENT 圖文 ###*/
+.data          {float: right;
+               background-color: #0097d8;
+               padding: 8px 22px;
+               border-radius: 55px / 48px;
+               text-align: center;
+               font-family: 'Maven Pro', Helvetica, Arial, sans-serif;
+               font-weight: bold;
+               color: #ffffff;}
+
+.data span     {display: block;
+                font-size: 32px;
+                line-height: 1;}
+
+#content h2    {font-size: 28px;
+                border-bottom: solid 1px #aaaaaa;
+                margin: 0 0 6px;
+                padding: 0 0 3px;}
+
+.VOYAGE        {font-size: 14px;
+                color: #666666;}
+
+.YAYAGE a      {text-decoration: none;
+                color: #666666;}
+
+#content p     {line-height: 1.6}
+
+/* ### SIDEBAR 圖文 ###*/
+.menu          {margin-bottom: 50px;}
+
+.menu h3       {font-family: 'Maven Pro',  Helvetica, Arial, san-serif;
+               font-size: 26px;
+               color: #66cle8;
+               margin: 0 0 5px;}
+
+.menu ul       {margin: 0;
+                padding: 0;
+                border-top: solid 1px #aaaaaa;}
+
+.menu li       {margin-bottom: 0;
+               list-style-type: none;
+               border-bottom: solid 1px #aaaaaa;}
+
+.menu li a     {display: block;
+                font-size: 14px;
+                text-decoration: none;
+                color: #666666;
+                padding: 10px 0 10px 20px;
+                background-image: url(images/LightIcons/listmark.png);
+                background-repeat: no-repeat;
+                background-position: 0 50%;}
+
+.menu li a:hover 
+          {background-color: #b4f0ff;}
+
+/* ### FOOTER 圖文 ###*/
+#footer       {font-family:'Maven Pro', Helvetica, Arial, san-serif;
+              color: #ffffff;
+              background-color: #000000;
+              padding: 10px 10px 20px;}
+
+#footer p     {margin: 0;}
+
+#footer small {font-size: 12px;
+              font-weight: bold;
+              display: block;}

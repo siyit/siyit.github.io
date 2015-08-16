@@ -1,0 +1,11 @@
+/* ### 版面設計 ###*/
+#container   {width: 100%;}
+
+#content     {width: 62.5%;}
+
+#sidebar    {width: 31.25%;}
+
+
+/* ### 圖文 ### */
+img          {max-width: 100%;
+              height: auto;}

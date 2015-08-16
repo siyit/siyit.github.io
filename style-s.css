@@ -1,0 +1,24 @@
+/* ### 版面設計 ###*/
+#container   {width: 100%;
+             position: relative;} 
+
+#iconmenu    {position: absolute;
+              right: 8px;
+              bottom: 6px;}
+
+#content     {width: 100%;
+             float: none;}
+
+#sidebar    {width: 100%;
+             float: none;}
+
+#footer      {padding-bottom: 60px;}
+
+#site, #iconmenu  {float: none;}
+
+#nav li a     {width: auto;
+               padding: 5px 8px;}
+
+/* ### 圖文 ### */
+img          {max-width: 100%;
+              height: auto;}
