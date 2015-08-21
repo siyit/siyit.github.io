@@ -1,126 +1,181 @@
 /* ### 版面設計 ###*/
 body         {margin: 24px 10px;
-             font-family: Arial, "新細明體", sans-serif;}
+             font-family: Arial, '新細明體', sans-serif;}
+
 
 #container   {width: 960px;
               margin: auto;} 
 
-#header      {margin: 0 0 50px;}
+#header      {margin-bottom: 10px;}
 
-#content     {width: 600px;
-             float: left;
-             margin: 0 0 50px;}
+#headerpost  {margin-bottom: 30px;}
 
-#sidebar    {width: 300px;
-             float: right;
-             margin: 0 0 50px;}
+#content     {margin-bottom: 30px;
+              overflow: hidden;}
 
-#footer      {clear: both;}
+.post    {float: left;
+          width: 216px;
+          margin-right: 32px;
+          margin-bottom: 25px;}
 
-/* ### HEADER 圖文 ###*/
-#site        {float: left;}
+.post:last-child   {margin-right: 0;}
+.post + .post + .post + .post {margin-right: 0;}
 
-#site h1     {margin: 0;
-              line-height: 1;}
 
-#iconmenu    {float: right;
-              text-align: right;}
+/* ### HEADER LOGO ###*/
+#site   {float: left;}
+#site h1 {margin: 0;}
+#site img {vertical-align: bottom;
+            width: 332px;}
 
-#iconmenu ul {margin: 0;
-              padding-top: 3px 00;}
+/* ### HEADER NAV ###*/
+#nav  {float: right;
+       font-size: 15px;
+       font-family: 'Maven Pro', Helvetica, Arial, sans-serif; padding-top: 30px;}
 
-#iconmenu li {display: inline;
-              list-style-type: none;}
+#nav ul  {margin: 0;
+          padding: 0;}
 
-#iconmenu img {border:none;}
+#nav li  {list-style-type: none;
+          float: left;}
 
-#headering img{vertical-align: bottom;}
+#nav li a {display: block;
+           float: left;
+           margin-left: 20px;
+           margin-top: 20px;
+           text-decoration: none;
+           border-bottom: solid 3px transparent;
+           color: #000000;}
 
-#nav          {font-family: 'Maven Pro', Helvetica, Arial, san-serif;
-               font-size: 14px;
-               overflow: hidden;
-               border-top: solid 1px #ffffff;
-               background-color: #000000;} 
+#nav li a:hover  {border-bottom-color: #ff1e97;}
 
-#nav ul       {margin: 0;
+#header   {overflow: hidden;}
+
+/* ### HEADERPOST 圖片###*/
+
+#headerpost img  {float: left;
+                  vertical-align: bottom;
+                  width: 620px;}
+
+/* ### HEADERPOST LEAD###*/
+#headerpost #lead  {float: left;
+                    width: 300px;
+                    color: #ffffff;
+                    margin-left: 25px;}
+
+#headerpost h2     {margin: 20px 0;}
+
+#headerpost .more  {font-size: 18px;
+                    font-family: 'Maven Pro', Helvetica, Arial, sans-serif;
+                    text-align: right;}
+
+#headerpost .more a {color: #ffffff;
+                     background-image: url(img/more.png);
+                     background-size: 28px;
+                     background-repeat: no-repeat;
+                     background-position: right center;
+                     display: block;
+                     padding: 10px 40px 10px 0;
+                     text-decoration: none;}
+
+#headerpost   {background-color: #333333;
+               background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#888888));
+               background: -webkit-linear-gradient(#000000 0%, #888888 100%);
+               background: -moz-linear-gradient(#000000 0%, #888888 100%);
+               background: -o-linear-gradient(#000000 0%, #888888 100%);
+               background: -ms-linear-gradient(#000000 0%, #888888 100%);
+               background: linear-gradient(#000000 0%, #888888 100%);
+               overflow: hidden;}
+               
+
+/* ### POST 圖文 ###*/
+.post img {width: 216px;
+           height: auto;
+           vertical-align: bottom;
+           border:none;}
+
+.post h2  {font-size: 16px;
+           margin: 5px 0 0;}
+
+.post p   {font-size: 12px;
+           margin: 10px 0;}
+
+.post .data  {float: left;
+              margin: 0;}
+
+.post .more_s  {float: right;
+                color: #ffffff;
+                font-size: 14px;
+                font-family: 'Macen Pro', Helvetica, Arial, sans-serif;
+                background-color: #666666;
+                background-image: url(img/more.png);
+                background-size: 16px;
+                background-repeat: no-repeat;
+                background-position: 94% 50%;
+                padding: 3px 25px 3px 5px;
+                margin: 0;}
+
+.post a   {color: #000000;
+           text-decoration: none;
+           display: block;
+           overflow: hidden;}
+.post a:hover {background-color: #cfffb2}
+
+/* ### FOOTER ###*/
+#footer  {background-color: #000000;
+         padding: 5px;}
+
+
+#footer p  {float: left;
+            margin-top: 10px;
+            color: #ffffff}
+
+#iconmenu  {float: right;}
+
+#iconmenu ul  {margin: 0;
+               padding: 3px 0 0;}
+
+#iconmenu li  {display: inline;
+               list-style-type: none;}
+
+#iconmenu img  {border:none;
+                width: 28px;}
+
+#submenu       {clear: both;
+               font-family: 'Maven Pro', Helvetica, Arial, san-serif;
+               font-size: 12px;
+               overflow: hidden;} 
+
+#submenu ul       {margin: 3px;
                padding: 0;}
 
-#nav li       {list-style-type: none;
+#submenu li       {list-style-type: none;
                float: left; }
 
-#nav li a     {display: block;
-               width: 120px;
-               padding: 5px 0;
+#submenu li a  {display: block;
+               width: auto;
                border-right: solid 1px #ffffff;
-               color: #ffffff;
                text-align: center;
-               text-decoration: none;}
+               text-decoration: none;
+             color: #ff1e97;
+             font-weight: bold;
+             padding-right: 6px;
+             margin-right: 3px;}
 
-#nav li a:hover {background-color: #0097d8;}
+#submenu li:last-child a 
+            {border: none;}
+#submenu li + li + li a {border:none;}
 
-/* ### CONTENT 圖文 ###*/
-.data          {float: right;
-               background-color: #0097d8;
-               padding: 8px 22px;
-               border-radius: 55px / 48px;
-               text-align: center;
-               font-family: 'Maven Pro', Helvetica, Arial, sans-serif;
-               font-weight: bold;
-               color: #ffffff;}
+small  {font-size: 12px;
+        font-weight: bold;
+        display: block;
+        color: #ffffff;
+        margin-top: 10px;}
 
-.data span     {display: block;
-                font-size: 32px;
-                line-height: 1;}
 
-#content h2    {font-size: 28px;
-                border-bottom: solid 1px #aaaaaa;
-                margin: 0 0 6px;
-                padding: 0 0 3px;}
 
-.VOYAGE        {font-size: 14px;
-                color: #666666;}
 
-.YAYAGE a      {text-decoration: none;
-                color: #666666;}
 
-#content p     {line-height: 1.6}
 
-/* ### SIDEBAR 圖文 ###*/
-.menu          {margin-bottom: 50px;}
 
-.menu h3       {font-family: 'Maven Pro',  Helvetica, Arial, san-serif;
-               font-size: 26px;
-               color: #66cle8;
-               margin: 0 0 5px;}
 
-.menu ul       {margin: 0;
-                padding: 0;
-                border-top: solid 1px #aaaaaa;}
-
-.menu li       {margin-bottom: 0;
-               list-style-type: none;
-               border-bottom: solid 1px #aaaaaa;}
-
-.menu li a     {display: block;
-                font-size: 14px;
-                text-decoration: none;
-                color: #666666;
-                padding: 10px 0 10px 20px;
-                background-image: url(images/LightIcons/listmark.png);
-                background-repeat: no-repeat;
-                background-position: 0 50%;}
-
-.menu li a:hover 
-          {background-color: #b4f0ff;}
-
-/* ### FOOTER 圖文 ###*/
-#footer       {font-family:'Maven Pro', Helvetica, Arial, san-serif;
-              color: #ffffff;
-              background-color: #000000;
-              padding: 10px 10px 20px;}
-
-#footer p     {margin: 0;}
-
-#footer small {font-size: 12px;
-              font-weight: bold;
-              display: block;}
